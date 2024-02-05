@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            /* background-color: #000; */
+        height: 100vh;
+        width: 100vw;
+        background-color: #000;
+       
+    
+
+        display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+    }
+    
+        
+        
+        div {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+       
+
+        }
+button {
+    padding: 30px;
+    margin: 100px;
+    border-radius: 50px;
+    background-color: aqua;
+    border: none;
+    width: 100px;
+    height: 100px;
+    box-shadow : 0px 0px 100px #1900ff;
+    background : radial-gradient(#1900ff 30%,#98f5e1);
+
+    font-weight: bold;
+    font-size: large;
+
+}
+
+#h {
+    color: #1900ff;
+  
+    font-weight: bold;
+    font-size: x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+</style>
+</head>
+<body>
+
+    <div></div>
+
+    <button>ON</button>
+
+<h1 id="h"></h1>
+  
+  
+  
+  <script>
+
+var bulb = document.querySelector("div")
+btnn = document.querySelector("button")
+h1 = document.querySelector("#h")
+
+val = 0;
+cot = 1;
+btnn.addEventListener("click",function(){
+if(val == 0){
+    bulb.style.backgroundColor = "aqua"
+    btnn.innerHTML = "OFF"
+    bulb.style.boxShadow = "0px 0px 100px #1900ff"
+    btnn.style.background = "radial-gradient(#98f5e1,#1900ff)"
+    bulb.style.background = "radial-gradient(#98f5e1,#1900ff)"
+    btnn.style.color = "black"
+    btnn.style.boxShadow = "0px 0px 100px #1900ff"
+cot++;
+val = 1;
+console.log(val)
+}
+else if(val == 1){
+    bulb.style.backgroundColor = "#000"
+    bulb.style.boxShadow = "0px 0px 0px #000"
+    bulb.style.background = "radial-gradient(black 60%,grey)"
+    btnn.style.background = "radial-gradient(black 60%,grey)"
+    btnn.style.color = "white"
+    btnn.style.boxShadow = "0px 0px 100px #000"
+    btnn.innerHTML = "ON"
+    val = 0;
+cot++;
+
+console.log(val)
+
+}
+console.log(h1)
+
+if(cot == 20){
+h1.innerHTML = "ITNA VELA HAI KYA LAVDE";
+h1.style.textShadow = "5px 5px 6px #1900ff"
+h1.style.background = "transparent"
+
+
+}
+}
+)
+
+
+
+    </script>
+</body>
+</html>
