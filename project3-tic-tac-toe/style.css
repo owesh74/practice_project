@@ -1,0 +1,121 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #294B29;
+    gap: 10px;
+
+}
+
+
+.main {
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+  height: 76vh; 
+  width: 38vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnn {
+    height: 23vh;
+    width: 12vw;
+font-size: 100px;
+font-weight: 600;
+border-radius: 20px;
+border: none;
+color: #DBE7C9;
+background-color: #789461;
+}
+.btnn:hover{
+background-color: #a5cb87;
+}
+
+.reset:hover{
+    background-color: #a5cb87;
+    }
+    
+.res:hover{
+    background-color: #a5cb87;
+    }
+.res{
+    width: 50%;
+    height: 10%;
+    font-size: 30px;
+font-weight: 400;
+border-radius: 20px;
+border: none;
+color: #DBE7C9;
+background-color: #789461;
+
+
+}
+.reset{
+    width: 8%;
+    height: 5%;
+    font-size: 20px;
+font-weight: 400;
+border-radius: 20px;
+border: none;
+color: rgb(249, 249, 249);
+background-color: #789461;
+}
+h1{
+    color: #DBE7C9;
+}
+
+
+
+@media only screen and (max-width: 410px) {
+
+    
+}
+
+@media only screen and (max-width: 450px) {
+ 
+
+    .btnn {
+        height: 17vh;
+        width: 30vw;
+        font-size: 100px;
+        font-weight: 600;
+        border-radius: 20px;
+        border: none;
+        color: #DBE7C9;
+        background-color: #789461;
+    }
+    .main {
+        display: flex;
+        gap: 15px;
+        width: 100vw;
+        align-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center ;
+        height: 100vh;
+        margin-bottom: 150px;
+    }
+    
+        .res {
+            width: 43%;
+            font-size: 16px;
+            font-weight: 500;
+            border-radius: 20px;
+            border: none;
+            color: #DBE7C9;
+            background-color: #789461;
+            height: 12%;
+        }
+    .reset {
+        width: 28%;
+        height: 9%;
+    }
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+  }
