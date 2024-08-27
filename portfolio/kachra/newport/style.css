@@ -1,0 +1,259 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+background-color: rgb(0, 0, 33);
+color: white;
+font-family: 'Bricolage Grotesque', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(18, 18, 32);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 25px;
+}
+  nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+ nav ul li a:hover{
+    color: rgb(133, 133, 210);
+    font-size: 1.04rem;
+}
+header {
+position: sticky;
+    top: 0px;
+    z-index: 20;
+}
+main hr{
+    border: 0;
+    background: rgb(133, 133, 210);
+    height: 1.2px;
+    margin: 60px 84px;
+}
+.left{
+    font-size: 2rem;
+}
+.firstsection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 120px 0;
+}
+.leftsection{
+    width: 23px 0;
+    font-size: 3rem;
+    margin: 30px
+
+}
+
+.rightsection{
+    width: 23px 0;
+
+}
+.firstsection div{
+    width: 30%;
+}
+.rightsection img{
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    border: 10px solid transparent;
+    padding: 15px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all ease 1s;
+}
+.rightsection:hover img{
+scale: 1.2;
+
+}
+.purple{
+    color: blueviolet;
+
+}
+.tex-grey{
+    color: gray;
+}
+#element{
+     color: blueviolet;
+}
+.secondsection{
+    max-width:80vw ;
+    margin: auto;
+    height: 80vh;
+}
+.secondsection h1{
+    font-size: 1.9rem;
+}
+.secondsection .box{
+    background: white;
+    width: 80vw;
+    height: 2px;
+    margin: 56px 0;
+    
+}
+
+.secondsection .ver{
+    height: 93px;
+    width: 1px;
+    background-color: white;
+
+}/*
+.secondsection .tech{
+    background: white;
+    width: 65vw;
+    height: 2px;
+    margin: 56px 0;
+}     */
+
+footer{
+    background-color: #171745;
+         }
+.footer{
+    display: flex;
+   justify-content: space-evenly;
+    padding: 23px 122px;
+
+}
+.footer ul{
+    list-style: none;
+}
+.footer >div{
+    width: 123px;
+}
+footer .rights{
+    text-align: center;
+    color: gray;
+    padding: 12px;
+}
+
+
+#loader {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: black;
+    z-index: 100;
+    transition: all ease 0.8s;
+    top: 0%;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.loadani {
+    font-size: 3vw;
+    color: transparent;
+    background: linear-gradient(to right, rgb(81, 0, 158),rgb(35, 0, 68));
+    -webkit-background-clip: text;
+    position: absolute;
+    opacity: 0;
+    animation: loads 1s linear 1s;
+font-family: 'Bricolage Grotesque', sans-serif;
+
+
+}
+
+.loadani:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.loadani:nth-child(3) {
+    animation-delay: 3s;
+}
+
+@keyframes loads {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0 ;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    
+    nav {
+        width: 190vw;
+        font-size;
+    }
+
+    .left {
+        font-size: 137%;
+    }
+
+    .firstsection div { 
+        width: 85%;
+    
+            position: relative;
+   
+    }
+    .rightsection img {
+        position: absolute;
+        z-index: -10;
+    }
+
+    .rightsection {
+        width: 23px 0;
+        margin-bottom: 288px;
+        margin-right: -50%;
+    }
+    main hr {
+      
+        width: 140%;
+    }
+    .secondsection h1 {
+        font-size: 1.9rem;
+        width: 190%;
+    }
+    
+    .secondsection {
+        max-width: 80vw;
+        margin: 24% 0% 0% 20%;
+        height: 80vh;
+    }
+    .tex-grey {
+        color: gray;
+        width: 170%;
+    }
+    .secondsection .box {
+        background: white;
+        width: 136vw;
+        height: 2px;
+        margin: 56px 0;
+    }
+    
+    .footer {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 23px 122px;
+        gap: 73px;
+    }
+    footer {
+        background-color: #171745;
+        width: 190vw;
+    }
+    .loadani {
+        font-size: 26vw;
+    }
+}
